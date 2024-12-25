@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrismJS Code Highlighting</title>
+    <!--Step 1:Thêm liên kết đến tệp CSS của PrismJS để áp dụng phong cách nổi bật cú pháp.(thêm trong thẻ head)-->
+    <link href="./prism.css" rel="stylesheet">
+</head>
+<body>
+    <h1>PrismJS Code Highlighting</h1>
+    <a href ="https://prismjs.com/" target="_blank">Link thư viện PrismJs</a>
+    <!--Code trước khi highlight-->
+    <h2>Code normal</h2>
+    <pre><code>
+    &lt;head&gt;
+        &lt;meta charset=&quot;UTF-8&quot;&gt;
+        &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+        &lt;title&gt;PrismJS Code Highlighting&lt;/title&gt;
+    &lt;/head&gt;</code></pre>
+
+    <!--Code sau khi highlight-->
+    <h2>Code highlight</h2>
+    <!--Step2:Gói đoạn code trong các thẻ <pre> và <code>,và đặt class="language-html" để xác định loại ngôn ngữ(đặt vào thẻ mở code).-->
+    <pre><code class="language-html">
+    &lt;head&gt;
+        &lt;meta charset=&quot;UTF-8&quot;&gt;
+        &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+        &lt;title&gt;PrismJS Code Highlighting&lt;/title&gt;
+    &lt;/head&gt;</code></pre>
+
+    <!--Step3:Thêm liên kết đến tệp JavaScript của PrismJS để thực hiện chức năng nổi bật cú pháp.(Thêm trong thẻ body )-->
+    <script src="./prism.js"></script>
+    
+</body>
+</html>
