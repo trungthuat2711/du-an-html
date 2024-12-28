@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colspan and Rowspan Tutorial</title>
+</head>
+<body>
+    <h1>Tối ưu hóa bố cục bảng | Sử dụng Colspan và Rowspan trong HTML</h1>
+    <h2>Khái niệm:</h2>
+    <p>
+        - <u>colspan: chỉ định phần tử chiếm bao nhiêu cột.</u><br><br>
+        - <u>rowspan: chỉ định phần tử chiếm bao nhiêu hàng.</u>
+    </p>
+    <hr>
+    <h2>Ví dụ:</h2>
+    <table>
+        <tr>
+            <th>Tên sản phẩm</th>
+            <th colspan="2">Mô tả</th>
+        </tr>
+        <tr>
+            <td rowspan ="2">Áo phông</td>
+            <td>Chất liệu</td>
+            <td>Bạt</td>
+        </tr>
+        <tr>
+            <td>Kích thước</td>
+            <td>ML,XL,L</td>
+        </tr>
+        <tr>
+            <td>Quần Jean</td>
+            <td colspan="2">Quần Jean cao cấp, dễ dàng phối đồ</td>
+        </tr>
+    </table>
+    <hr>
+    <h2>Bài tập:</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Tên sản phẩm</th>
+                <th>Giá sản phẩm</th>
+                <th>Số lượng còn lại</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Áo thun nam</td>
+                <td>100.000VND</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>Quần Jean nữ</td>
+                <td>200.000VND</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>Giày thể thao</td>
+                <td>300.000VND</td>
+                <td>30</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Remark</td>
+                <td colspan="2" rowspan="2">Chỉ thống kê sản phẩm trong kho</td>
+            </tr>
+        </tfoot>
+    </table>
+
+
+
+
+
+
+
+</body>
+</html>
