@@ -1,0 +1,22 @@
+h1{
+    /* ctr + "/" = comment line */
+
+    /* color: màu chữ */
+    color:blueviolet;
+
+    /* font-style: kiểu chữ */
+    font-style:italic;
+
+    /* font-family: font chữ */
+    font-family:Arial, Helvetica, sans-serif;
+
+    /* font-size: chỉnh cở chữ */
+    font-size:18px;
+
+    /* text-transform: chuyển chữ hoa thường */
+    text-transform:uppercase;
+
+    /* text-align: căn chỉnh văn bản */
+    text-align:center;
+    
+}

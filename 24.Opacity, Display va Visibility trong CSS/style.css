@@ -1,0 +1,40 @@
+body {
+    /* background-image: thêm hình nền */
+    background-image: url(./img/bg.jpg);
+}
+h2 {
+    /* opacity: Thay đổi độ trong suốt của phần tử(cả phần tử con, phần tử con không kế thừa opacity!)
+    Giá trị trong khoảng 0.0 - 1.0 hoặc 0%(hoàn toàn trong suốt) - 100%(k trong suốt) 
+    Lưu ý: khi opacity = 0 (không nhìn thấy phần tử trên giao diện, vẫn chiếm không gian, vẫn tương tác được. */
+    opacity:100%;
+    /* background-color: màu nền (phần tử con không kế thừa background-color)
+    opacity thay đổi cả độ trong suốt màu nền */
+    background-color: aqua;
+}
+h3{
+    /* display:none; Ẩn phần tử(cả phần tử con, phần tử con không kế thừa display) khỏi giao diện( Xóa cả không gian nó đang chiếm, không thể tương tác được) */
+    display:none;
+    background-color: darkviolet;
+}
+h4{
+    /* visibility: Ẩn(hidden) hoặc hiện(visible) phần tử(cả phần tử con), (phần tử vẫn chiếm không gian nhưng không thể tương tác được) */
+    visibility:visible;
+    visibility:hidden;
+    background-color: rgb(168, 155, 54);
+}
+h5{
+    background-color:chartreuse;
+}
+span{
+    opacity:100%; 
+    /* phần tử con của h2 không hiện vì không kế thừa opacity */
+}
+b{
+    display:block;
+    /* phần tử con của h3 không hiện vì không kế thừa display */
+}
+i{
+    visibility:visible;
+    /* phần tử con của h4 có thể hiện lên vì có kế thừa visibility, không hiện màu nền vì không thừa kế background-color */
+    
+}
