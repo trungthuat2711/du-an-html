@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thẻ input</title>
+</head>
+<body>
+    <!-- Thẻ label là nhãn ứng với id của input -->
+
+    <!-- Tạo 1 nút ấn kích hoạt JavaScript khi nó được nhấp vào: -->
+    <input type="button" value="Click here"><br>
+    
+    <!-- Tạo 1 ô để nhập text -->
+    <label for="username">User name: </label>
+    <input type="text" id="username" name="username" placeholder="Nhập tên của bạn"><br>
+
+    <!-- Tạo các checkbox cho phép người dùng chọn một hoặc nhiều tùy chọn trong một số lựa chọn giới hạn: -->
+    <label for="device1">You have a phone:</label>
+    <input type="checkbox" name="device1" id="device1" value="Phone"><br>
+    <label for="device2">You have a laptop:</label>
+    <input type="checkbox" name="device2" id="device2" value="Laptop"><br>
+
+    <!-- Tạo nút radio cho phép người dùng chỉ chọn một trong số các lựa chọn giới hạn: (trùng name!)-->
+    <label for="A">A:</label>
+    <input type="radio" name="choice" id="A" value="A"><br>
+    <label for="B">B:</label>
+    <input type="radio" name="choice" id="B" value="B"><br>
+    <label for="C">C:</label>
+    <input type="radio" name="choice" id="C" value="C"><br>
+    <label for="D">D:</label>
+    <input type="radio" name="choice" id="D" value="D"><br>
+
+    <!-- Chọn một màu từ bộ chọn màu: -->
+    <label for="favor">Select your favorite color:</label>
+    <input type="color" name="favor" id="favor"><br>
+    
+    <!-- Tạo 1 bộ chọn ngày tháng năm -->
+    <label for="birthday">Birthday:</label>
+    <input type="date" name="Birthday" id="birthday"><br><br>
+
+    <!-- Tạo 1 bộ ngày tháng năm và giờ + phút (Am: sáng, PM: chiều)-->
+    <label for="birthdaytime">BirthdayTime:</label>
+    <input type="datetime-local" name="BirthdayTime" id="birthdaytime"><br><br>
+
+    <!-- Xác định trường cho địa chỉ email (sẽ được xác thực tự động khi gửi) thêm thuộc tính multiple cho phép chứa nhiều email cách nhau bởi dấu phẩy-->
+    <label for="emails">Enter your email:</label>
+    <input type="email" name="emails" id="emails" multiple><br><br>
+
+    <!-- Định nghĩa trường mật khẩu (các ký tự được che dấu, sử dụng các thuộc tính maxlength và minlength để quy định độ dài ngắn của mật khẩu) -->
+    <label for="pwd">Password:</label>
+    <input type="password" name="pwd" id="pwd" minlength="5"><br><br>
+
+    <!-- Xác định trường chọn tệp (thêm thuộc tính multiple để chọn nhiều tệp) -->
+    <label for="myfile">Select files:</label>
+    <input type="file" name="myfile" id="myfile" multiple><br><br>
+
+    <!-- Định nghĩa hình ảnh làm nút gửi (khi ấn vào hình ảnh sẽ tương tự như ấn vào nút submit)-->
+    <input type="image" src="./pngtree-sign-arrow-clipart-png-image_6520594.png" alt="Submit" width="40">
+    <p><b>Note:</b> The input type="image" sends the X and Y coordinates of the click that activated the image button.</p><br>
+
+    <!-- Định nghĩa trường để nhập số (có thể đặt giới hạn về số nào được chấp nhận) -->
+    <label for="number">Enter number:</label>
+    <input type="number" name="number" id="number" min="1" max="10"><br><br>
+
+    <!-- Định nghĩa bộ điều khiển(thanh trượt) để điều chỉnh giá trị (giá trị mặc định 0 - 100 có thể định nghĩa lại giá trị bằng thuộc tính max, min) -->
+    <label for="vol">Volume (between 0 - 50):</label>
+    <input type="range" name="Vol" id="vol" min="0" max="50" step="1"><br><br>
+
+    <!-- Thẻ <form> trong HTML để tạo các biểu mẫu (forms) trên trang web, giúp người dùng có thể nhập thông tin và gửi đến máy chủ.
+    Thuộc tính action của thẻ <form> xác định URL sẽ nhận dữ liệu của biểu mẫu khi nó được gửi.
+    Thuộc tính method xác định phương thức HTTP để gửi dữ liệu (post hoặc get).-->
+    <form action="">
+        <label for="email">Enter email:</label>
+        <input type="email" name="email" id="email"><br>
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password"><br>
+        <!-- Định nghĩa nút reset (đặt lại tất cả các giá trị biểu mẫu về giá trị mặc định) -->
+        <input type="reset" value="reset"><br><br>
+    </form>
+
+    <!-- Định nghĩa trường tìm kiếm (như tìm kiếm trang web hoặc tìm kiếm trên Google) -->
+    <label for="gsearch">Google search:</label>
+    <input type="search" name="search" id="gsearch"><br><br>
+
+    <!-- Định nghĩa 1 nút submit Khi nhấn vào nút này, dữ liệu trong biểu mẫu sẽ được gửi đến máy chủ web hoặc URL được chỉ định trong thuộc tính action của thẻ <form> -->
+    <input type="submit" value="Gửi"><br><br>
+
+    <!-- Định nghĩa trường nhập số điện thoại (qui định số nhập vào theo định dạng dùng thuộc tính pattern)-->
+    <label for="phone">Enter phone number:</label>
+    <input type="tel" name="phone" id="phone" placeholder="0988 223 173" pattern="[0-9]{4} [0-9]{3} [0-9]{3}"><br><br>
+
+    <!-- Định nghĩa bộ chọn thời gian giờ + phút -->
+    <label for="time">Select a time:</label>
+    <input type="time" name="time" id="time"><br><br>
+
+    <!-- Thẻ button: tạo các nút bấm trên trang web (Có thể chứa bất kỳ nội dung HTML nào bên trong nút, bao gồm văn bản, hình ảnh, thẻ <span>,...)
+    Thường được sử dụng khi cần nhiều tùy biến về giao diện hoặc khi cần tương tác phức tạp hơn.-->
+    <button>đăng ký</button>
+</body>
+</html>
