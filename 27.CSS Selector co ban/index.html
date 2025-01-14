@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS selector cơ bản</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- 1.ID selector(#): khi chỉ muốn áp dụng CSS cho 1 phần tử chỉ định nào đó của HTML -> dùng id
+    - ID là duy nhất, theo quy chuẩn không cho phép đặt trùng id đã có.
+    - check code hợp lệ (https://validator.w3.org/#validate_by_input).
+    - ID, class không được đặt tên bắt đầu bằng số, nếu có 2 kí tự trở lên nên đặt dấu _ hoặc - để nối.
+    2.Class selector(.): Do không thể sử dụng lại tên id ->  trường hợp muốn khai báo lặp lại thì dùng Class
+    -->
+    <h1>Title 1 </h1>
+    <p>Đoạn văn thứ 1</p>
+    <p id="doan2">Đoạn văn thứ 2</p>
+    <p>Đoạn văn thứ 3</p>
+    <p class="demo">Đoạn văn thứ 4</p>
+    <h2 class="demo demo2">Title 2</h2>
+    <ul class="item_ul_1">
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+    </ul>
+    <ol class="item_ol_1">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+  </body>
+</html>
