@@ -1,0 +1,9 @@
+/* (*) selector: chọn tất cả phần tử html */
+* {
+    color:red;
+    font-size: 24px;
+}
+/* element.class: chọn các phần tử thuộc class chỉ định */
+h2.demo{
+    color:aqua;
+}
