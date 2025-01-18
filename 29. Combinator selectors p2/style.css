@@ -1,0 +1,11 @@
+/* element,element : cho nhiều phần tử có cùng định dạng giống nhau */
+p,
+.demo,
+#title{
+  color:blue ;
+}
+
+/* .class1.class2 : chọn tất cả phần tử đồng thời thuộc cả class1 và class2 (chỉ khi thuộc cả 2 class mới chọn!)*/
+.demo.demo2{
+  color:forestgreen;
+}
