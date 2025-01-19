@@ -1,0 +1,14 @@
+/* element1 element2 : chọn các phần tử 2 là con của phần tử 1
+(không quan tâm là con trực tiếp hay không trực tiếp!) */
+div p {
+  color: blue;
+}
+/* Tác động lên thẻ p nằm trong class loichuc */
+.loichuc p {
+  font-size: 30px;
+}
+/* element1>element2 : chọn các phần tử 2 là con trực tiếp của element1
+(chỉ chọn con trực tiếp không chọn cháu chắt,...) */
+div>p{
+    color:red;
+}
