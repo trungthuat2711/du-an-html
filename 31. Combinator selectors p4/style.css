@@ -1,0 +1,22 @@
+/* element1 + element2 : chọn phần tử 2 đầu tiên được đặt sát ngay sau phần tử 1. */
+h1 + h2{
+    color:red;
+}
+.demo + h3{
+    color:blue;
+}
+.demo.demo2 + h3{
+    font-size: 30px;
+}
+/* element1 ~ element2 :  chọn tất cả phần tử 2 nằm sau phần tử 1
+(chỉ cần nằm sau không cần sát ngay sau!)*/
+h1 ~ h2{
+    color:green; 
+}
+div ~ div{
+    color:red;
+}
+/* Thẻ p đang nằm trong thẻ div không phải nằm sau thẻ h1 vì không cùng cấp! */
+h1 ~ p{
+    color:yellow;
+}
