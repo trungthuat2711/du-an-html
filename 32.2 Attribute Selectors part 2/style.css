@@ -1,0 +1,30 @@
+/* [attribute~="value"] : chọn phần tử có giá trị thuộc tính chứa chính xác 1 từ được chỉ định 
+(chỉ chỉ định 1 từ) */
+[title~="tuhoc.cc"]{
+    color:red;
+}
+
+/* [attribute*="value"] : chọn phần tử có giá trị thuộc tính có chứa chuỗi chỉ định
+(không cần chính xác chỉ cần chuỗi có tồn tại trong giá trị thuộc tính!) */
+[title*="tuhoc.cc"]{
+    font-size: 30px;
+}
+
+/* [attribute|="value"] :chọn phần tử có giá trị thuộc tính chính xác như giá trị chỉ định hoặc theo sau nó là dấu - với các giá trị khác
+(giá trị của thuộc tính phải bắt đầu bằng giá trị chỉ định và chính xác như giá trị chỉ định!)*/
+[title|="pic"]{
+    color: rgb(175, 206, 20);
+} 
+
+/* [attribute^="value"] :chọn phần tử có giá trị thuộc tính bắt đầu bằng giá trị được chỉ định.
+(không cần chính xác từ chỉ định và không quan tâm ở phía sau còn giá trị khác chỉ cần bắt đầu bằng giá trị chỉ định!)*/
+[title^="chill"]{
+    color:chocolate;
+}
+
+/* [attribute$="value"] :chọn phần tử có giá trị thuộc tính kết thúc bằng giá trị chỉ định
+(không cần chính xác từ chỉ định phía trước có thể có thêm giá trị khác!) */
+[title$="link"]{
+    color:pink;
+}
+

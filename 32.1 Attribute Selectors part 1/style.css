@@ -1,0 +1,13 @@
+/* [attribute] : chọn tất cả phần tử có thuộc tính tương ứng. */
+[href]{
+    color:red;
+}
+
+/* [attribute="value"] : chọn tất cả phần tử có thuộc tính với giá trị tương ứng. */
+[target="_blank"]{
+    color:pink;
+}
+
+p[href]{
+    color:blue;
+}
