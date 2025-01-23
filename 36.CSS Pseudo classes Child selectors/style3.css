@@ -1,0 +1,41 @@
+/* 10. :nth-last-child() pseudo-class :chọn một hoặc nhiều phần tử dựa trên vị trí của chúng trong phần tử cha tính từ dưới lên.*/
+/* Ví dụ:
+li:nth-child(2) chọn phần tử li thứ hai tính từ dưới lên.
+
+li:nth-child(odd) chọn tất cả các phần tử li ở vị trí lẻ tính từ dưới lên.
+
+li:nth-child(even) chọn tất cả các phần tử li ở vị trí chẵn tính từ dưới lên.
+
+li:nth-child(3n) chọn mỗi phần tử li thứ ba (3, 6, 9, ...) tính từ dưới lên.
+
+li:nth-child(3n+1) chọn mỗi phần tử li thứ ba bắt đầu từ phần tử đầu tiên (1, 4, 7, ...) tính từ dưới lên.
+
+li:nth-child(3n-1) chọn mỗi phần tử li thứ ba bắt đầu từ (2,5,8,...) tính từ dưới lên.*/
+
+/* chọn những phần tử ở vị trí 2 tính từ dưới lên trong phần tử cha của chúng*/
+:nth-last-child(2){
+    color:red;
+}
+
+/* chọn phần tử p ở vị trí 4 tính từ dưới lên trong phần tử cha của nó */
+p:nth-last-child(4){
+    color:blue;
+}
+
+/* chọn phần tử div ở vị trí lẻ tính từ dưới lên*/
+div:nth-last-child(odd){
+    background-color: chartreuse;
+}
+
+/* chọn phần tử div ở vị trí chẵn tính từ dưới lên */
+div:nth-last-child(even){
+    background-color:blueviolet;
+}
+
+/* n=0 => 1
+ * n=1 => 4
+ * n=2 => 7 
+ * tính từ dưới lên*/
+li:nth-last-child(3n+1){
+    background-color: yellow;
+}

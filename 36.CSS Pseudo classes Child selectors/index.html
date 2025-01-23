@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS pseudo classed child selector</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <!-- Thẻ p là con đầu tiên của thẻ div -->
+        <p>Đoạn 1</p>
+        <!-- 2 thẻ p bên dưới không phải thẻ con đầu tiên của thẻ div -->
+        <p>Đoạn 2</p>
+        <!-- Thẻ p là con cuối cùng của thẻ div -->
+        <p>Đoạn 3</p>
+    </div>
+    <div class="demo">
+        <!-- Thẻ h1 là con đầu tiên của thẻ div -->
+        <h1>Thẻ con đầu tiên của thẻ div class demo</h1>
+        <!-- Các thẻ p bên dưới không phải con đầu tiên của thẻ div -->
+        <p>Nội dung 1</p>
+        <p>Nội dung 2</p>
+        <p>Nội dung 3</p>
+        <!-- Thẻ p là thẻ con cuối cùng của thẻ div -->
+        <p>Nội dung 4</p>
+    </div>
+    
+    <div class="test">
+        <!-- Thẻ ul là con đầu tiên của thẻ div-->
+        <ul>
+            <!-- Thẻ li là con đầu tiên của thẻ ul -->
+            <li>item 1</li>
+            <!-- 2 Thẻ li bên dưới không phải con đầu tiên của ul -->
+            <li>item 2</li>
+            <li>item 3</li>
+        </ul>
+        <ol>
+            <!-- Thẻ li là con đầu tiên của thẻ ol -->
+            <li>text 1</li>
+            <!-- 2 Thẻ li bên dưới không phải con đầu tiên của ol -->
+            <li>text 2</li>
+            <li>text 3</li>
+            <li>
+                <ol>
+                    <li>abc</li>
+                    <li>123</li>
+                </ol>
+                <ol>
+                    <li>a1</li>
+                    <li>a2</li>
+                </ol>
+            </li>
+            <li>Last</li>
+        </ol>
+    </div>
+
+</body>
+</html>

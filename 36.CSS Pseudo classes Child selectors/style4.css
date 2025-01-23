@@ -1,0 +1,9 @@
+/* 11. :only-child pseudo class :chọn và định kiểu cho phần tử con duy nhất của phần tử cha.Nghĩa là phần tử đó không có anh chị em (siblings).*/
+
+p:only-child{
+    color:red;
+    font-size:30px;
+}
+ul>:only-child{
+    color:blue;
+}

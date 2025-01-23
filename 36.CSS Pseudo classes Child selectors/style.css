@@ -1,0 +1,35 @@
+/* 7. :first-child pseudo-class :chọn phần tử là phần tử con đầu tiên của phần tử cha (trong một nhóm các phần tử anh em).*/
+p:first-child{
+    color:red;
+    font-size: 30px;
+}
+
+ul:first-child{
+    background-color:yellow;
+}
+/* chọn phần tử con của thẻ ul trong các phần tử con,cháu,... mà phần tử đó là phần tử con đầu tiên của phần tử nào đó! */
+ul :first-child{
+    color:red;
+}
+/* chọn phần tử con của thẻ ol trong các phần tử con trực tiếp (không gồm cháu, chắt,...) mà phần tử đó là phần tử con đầu tiên của phần tử nào đó!*/
+ol>:first-child{
+    color:aqua;
+}
+
+/* 8. :last-child pseudo-class :chọn phần tử là phần tử con cuối cùng trong các con của một phần tử cha.(trong nhóm các phần tử anh em)*/
+p:last-child{
+    color:blue;
+    font-size: 30px;
+}
+ol:last-child{
+    background-color:darkgray;
+}
+/* chọn phần tử con của thẻ ul trong các phần tử con,cháu,chắt,... mà phần tử đó là phần tử con cuối cùng của phần tử nào đó! */
+ul :last-child{
+    color:pink;
+}
+/* chọn phần tử con của thẻ ol trong các phần tử con trực tiếp (không gồm cháu,chắt,...) mà phần tử đó là phần tử con cuối cùng của phần tử nào đó!*/
+ol>:last-child{
+    color:rgb(214, 68, 15);
+}
+

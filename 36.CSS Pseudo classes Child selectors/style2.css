@@ -1,0 +1,40 @@
+/* 9. :nth-child() pseudo-class :chọn một hoặc nhiều phần tử dựa trên vị trí của chúng trong phần tử cha.*/
+/* Ví dụ:
+li:nth-child(2) chọn phần tử li thứ hai.
+
+li:nth-child(odd) chọn tất cả các phần tử li ở vị trí lẻ.
+
+li:nth-child(even) chọn tất cả các phần tử li ở vị trí chẵn.
+
+li:nth-child(3n) chọn mỗi phần tử li thứ ba (3, 6, 9, ...).
+
+li:nth-child(3n+1) chọn mỗi phần tử li thứ ba bắt đầu từ phần tử đầu tiên (1, 4, 7, ...).
+
+li:nth-child(3n-1) chọn mỗi phần tử li thứ ba bắt đầu từ (2,5,8,...)*/
+
+/* chọn những phần tử ở vị trí 3 trong phần tử cha của chúng */
+:nth-child(3){
+    color:red;
+}
+/* chọn phần tử p ở vị trí 4 trong phần tử cha của nó */
+p:nth-child(4){
+    color:blue;
+}
+/* chọn phần tử div ở vị trí lẻ */
+div:nth-child(odd){
+    background-color: chartreuse;
+}
+
+/* chọn phần tử div ở vị trí chẵn */
+div:nth-child(even){
+    background-color: blueviolet;
+}
+
+/* n=0 => 1
+ * n=1 => 4
+ * n=2 => 7 */
+li:nth-child(3n+1){
+    background-color: yellow;
+}
+
+
