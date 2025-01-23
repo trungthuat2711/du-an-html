@@ -1,0 +1,39 @@
+/* 12. :first-of-type :chọn phần tử đầu tiên có kiểu của nó trong phần tử cha.*/
+p:first-of-type{
+    color:red;
+    font-size:30px;
+}
+
+/* 13. :last-of-type :chọn phần tử cuối cùng có kiểu của nó trong phần tử cha.*/
+p:last-of-type{
+    color:aqua;
+    font-size: 30px;
+}
+
+/* 14. :nth-of-type() :chọn phần tử có kiểu của nó dựa theo vị trí trong phần tử cha*/
+p:nth-of-type(3){
+    color:blueviolet;
+    font-size: 30px;
+}
+p:nth-of-type(even){
+    color:chartreuse;
+    font-size: 30px;
+}
+p:nth-of-type(3n-1){
+    color:chocolate;
+    font-size: 30px;
+}
+/* 15. :nth-last-of-type() :chọn phần tử có kiểu của nó dựa theo vị trí trong phần tử cha từ dưới lên*/
+li:nth-last-of-type(2){
+    color:red;
+    font-size: 30px;
+}
+/* 16. :only-of-type :chọn phần tử con duy nhất có kiểu của nó trong phần tử cha(có thể có thêm anh em khác kiểu)*/
+span:only-of-type{
+    color:blue;
+    font-size: 30px;
+}
+/* do trong thẻ div có 2 con nên thẻ h2 không được định dạng vì không phải con duy nhất */
+h2:only-child{
+    color:deeppink;
+}
