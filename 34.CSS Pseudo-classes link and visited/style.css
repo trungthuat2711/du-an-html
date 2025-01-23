@@ -1,0 +1,16 @@
+/* 3. :link pseudo-class : Tác dụng lên liên kết chưa click vào với các thuộc tính được định nghĩa bên trong. */
+.click_me:link{
+    color:chocolate;
+}
+/* 4. :visited pseudo-class : Tác dụng lên liên kết đã click vào với các thuộc tính được định nghĩa bên trong.*/
+.click_me:visited{
+    color:green;
+}
+
+a:link{
+    color:yellow;
+}
+a:visited{
+    color:aqua
+}
+

@@ -1,0 +1,23 @@
+/* 5. :empty pseudo-class :chọn các phần tử không có con,nghĩa là không chứa bất kỳ phần tử hoặc văn bản nào bên trong.*/
+/* Một phần tử có phần tử con nếu nó chứa một phần tử, văn bản hoặc thậm chí là khoảng trắng khác giữa các thẻ của nó. */
+.empty:empty{
+    background-color: aqua;
+    width: 90px;
+    height: 50px;
+}
+.empty{
+    background-color: red;
+    width: 90px;
+    height: 50px;
+}
+
+/* 6. :target pseudo-class : */
+/* định kiểu cho phần tử là mục tiêu của bộ định hướng URL.(có id trùng với phần hash trong URL)
+Ví dụ, khi người dùng nhấp vào một liên kết có đoạn sau dấu thăng (#) trong URL, phần tử mà ID khớp với đoạn đó sẽ trở thành mục tiêu và có thể được định kiểu theo cách khác biệt. */
+h2 {
+    display:none;
+}
+h2:target{
+    display:block;
+    color:blue;
+}

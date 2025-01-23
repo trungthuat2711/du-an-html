@@ -1,0 +1,23 @@
+/* - Pseudo class được sử dụng để định nghĩa trạng thái đặc biệt của một phần tử.
+- ví dụ: 
++Tạo kiểu cho một phần tử khi người dùng di chuyển chuột qua nó.
++Kiểu liên kết đã truy cập và chưa truy cập khác nhau.
++Tạo kiểu cho một phần tử khi nó được chú ý.
++Kiểu các thành phần biểu mẫu hợp lệ/không hợp lệ/bắt buộc/tùy chọn.
+- cú pháp của pseudo class:
+selector:pseudo-class {
+  property: value;
+}
+ */
+
+/* 1. :hover pseudo-class : di chuột vào selector sẽ thay đổi theo các thuộc tính được định nghĩa*/
+.dichuot:hover{
+    color:brown;
+    font-size: 30px;
+}
+
+/* 2. :active pseudo-class : nhấn giữ chuột vào selector sẽ thay đổi các thuộc tính được định nghĩa*/
+p:active{
+    color:blue;
+    font-size: 20px;
+}
