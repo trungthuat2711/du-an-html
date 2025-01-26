@@ -1,0 +1,41 @@
+/* Trong CSS, thuật ngữ "box model" được sử dụng khi nói về thiết kế và bố cục. 
+CSS box model về cơ bản là một hộp bao quanh mọi phần tử HTML.Bao gồm: content, padding, borders và margins */
+
+
+/* Padding(khoảng đệm) :Sử dụng để tạo khoảng trống xung quanh nội dung của phần tử, bên trong bất kỳ đường viền nào được xác định.*/
+.div1{
+    width:100px;
+    height: 100px;
+    color:yellow;
+    background-color: red;
+    /* Tạo khoảng đệm bên trên phần tử */
+    padding-top: 20px;
+    /* Tạo khoảng đệm bên phải phần tử */
+    padding-right: 20px;
+    /* Tạo khoảng đệm bên dưới phần tử */
+    padding-bottom: 20px;
+    /* Tạo khoảng đệm bên trái phần tử */
+    padding-left: 20px;
+}
+/* Thuộc tính viết tắt */
+.div2{
+    width: 100px;
+    height: 100px;
+    color:blue;
+    background-color: brown;
+    /* Nếu thuộc tính padding có 4 giá trị 
+    -> Đệm trên - phải - dưới - trái */
+    padding: 20px 25px 20px 25px ;
+
+    /* Nếu thuộc tính padding có 3 giá trị
+    -> Đệm trên - trái phải - dưới */
+    padding: 20px 15px 25px;
+
+    /* Nếu thuộc tính padding có 2 giá trị
+    -> Đệm trên dưới - trái phải */
+    padding:20px 20px;
+
+    /* Nếu thuộc tính padding có 1 giá trị
+    -> Đệm trên dưới trái phải */
+    padding: 25px;
+}
