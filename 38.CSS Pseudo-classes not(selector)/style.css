@@ -1,0 +1,11 @@
+/* 17. :not(selector) pseudo-classes :chọn những phần tử ngoại trừ selector trong not 
+selector có thể là bất kì bộ chọn nào!*/
+
+/* chọn tất cả các thẻ có class top trừ thẻ p */
+.top:not(p){
+    background-color:yellow;
+}
+
+.top:not(p:last-of-type){
+    color:red;
+}

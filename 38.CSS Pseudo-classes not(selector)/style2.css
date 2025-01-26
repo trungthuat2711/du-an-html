@@ -1,0 +1,37 @@
+/* Mức độ ưu tiên các bộ chọn ( từ mạnh đến yếu ):
+1. !important (mạnh nhất)
+2. Inline style (viết trực tiếp vào phần tử HTML, 1000)
+3. ID(#)selector 100
+4. Class(.) hoặc pseudo-class(:) hoặc attribute([]) selector 10
+5. Element selector(h,p,div,...) 1
+6. Universal selector(*) :bộ chọn chung 0
+*/
+
+/* 1+1 = 2*/
+p+h1{
+color:bisque;
+}
+/* 0 + !important = biggest*/
+*{
+    color:red !important;
+}
+/* 1 */
+h1{
+    color: green;
+}
+/* 10 */
+.top{
+    color:blue;
+}
+/* 10 */
+:only-child{
+    color:yellow;
+}
+/* 10 */
+[title]{
+    color:blueviolet;
+}
+/* 100 */
+#line1{
+    color:brown;
+}
