@@ -1,0 +1,22 @@
+/* Margin(lề) :sử dụng để xác định khoảng cách giữa các phần tử trên trang */
+.box{
+    width: 210px;
+    height: 200px;
+    background-color: red;
+    padding: 10px 20px 30px 40px;
+    border:10px solid blue;
+    /* thuộc tính có 1 giá trị -> cả 4 hướng */
+    margin: 15px; 
+    /* thuộc tính có 2 giá trị -> trên dưới - trái phải */
+    margin: 15px 30px;
+    /* thuộc tính có 3 giá trị -> trên - trái phải - dưới */
+    margin: 15px 30px 20px;
+    /* thuộc tính có 4 giá trị -> trên - phải - dưới - trái */
+    margin: 15px 15px 15px 15px;
+
+    /* set từng cạnh tường minh */
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-right: 15px;
+    margin-left: 15px;
+}
