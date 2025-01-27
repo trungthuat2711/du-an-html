@@ -1,0 +1,70 @@
+/* Border(viền) :được sử dụng để tạo đường viền cho các phần tử HTML bao quanh phần content và padding.*/
+
+div{
+    color:yellow;
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+/* Border Cú pháp viết tắt: độ rộng - kiểu viền - màu viền (cho cả 4 hướng) */
+    border: 10px solid blue;
+}
+h1{
+    color:aqua;
+    background-color: brown;
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+/* Border cú pháp đầy đủ: (cho cả 4 hướng)*/
+    border-width: 10px;
+    border-style: dashed;
+    border-color: yellowgreen;
+}
+h2{
+    color:aqua;
+    background-color: brown;
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+/* Border cho từng hướng: */
+    border-top: 10px solid yellowgreen;
+    border-right: 15px dotted red;
+    border-bottom: 10px dashed yellow;
+    border-left: 15px inset orange;
+}
+h3{
+    color:aqua;
+    background-color: brown;
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+/* Border cú pháp đầy đủ cho từng hướng */
+    /* top 10px - right 20px - bottom 30px - left 40px */
+    border-width: 10px 20px 30px 40px;
+    /* top solid - right + left solid - bottom inset */
+    border-style: solid solid inset ;
+    /* top + bottom yellow - right + left red */
+    border-color: yellow red;
+}
+
+/* Border-radius: Bo góc */
+.bogoc{
+    /* 1 giá trị -> bo cả 4 góc */
+    border-radius: 30px; 
+    /* 2 giá trị -> bo góc (trên trái + dưới phải) - (trên phải + dưới trái) */
+    border-radius: 30px 20px;
+    /* 3 giá trị -> bo góc trên trái - (trên phải + dưới trái) - dưới phải */
+    border-radius: 30px 50px 70px;
+    /* 4 giá trị -> bo góc trên trái - trên phải - dưới phải - dưới trái */
+    border-radius: 30px 10px 70px 90px ;
+
+    /* ghi tường minh từng góc */
+    /* góc trên bên trái  */
+    border-top-left-radius: 30px;
+    /* góc trên bên phải */
+    border-top-right-radius: 10px;
+    /* góc dưới bên trái */
+    border-bottom-left-radius: 90px;
+    /* góc dưới bên phải */
+    border-bottom-right-radius: 70px
+}
