@@ -1,0 +1,16 @@
+.container{
+    background-color: yellow;
+    /* Thêm khoảng đệm */
+    padding: 40px;
+}
+.avatar{
+    width: 120px;
+    height: 120px;
+    /* Bo viền thành hình tròn */
+    border-radius: 50%;    
+    border: 1px solid #ddd;
+    margin-left: -50px;
+}
+img:first-child{
+    margin-left:0px;
+}
