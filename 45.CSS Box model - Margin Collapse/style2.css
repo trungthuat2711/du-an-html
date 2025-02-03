@@ -1,0 +1,18 @@
+/* - Trường hợp 2: margin collapse xảy ra với phần tử có quan hệ cha con.
++ Chỉ set margin cho phần tử con nhưng phần tử cha bị kéo theo.
++ Khi set margin cùng chiều cho thẻ cha và con kích thước nào lớn hơn sẽ quyết định.*/
+
+/* - Cách khắc phục: thêm display:flex và flex-direction:column vào thẻ cha  */
+.box_parent{
+    background-color: pink;
+    height: 250px;
+    margin-top: 140px;
+    /*  */
+    display:flex;
+    flex-direction: column;
+}
+.box_child{
+    width: 50%;
+    background-color: blue;
+    margin-top:400px;
+}
