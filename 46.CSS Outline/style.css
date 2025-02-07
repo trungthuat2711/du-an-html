@@ -1,0 +1,19 @@
+/* - Outline: Là đường viền bao quanh mép ngoài của phần tử 
++ không làm tăng kích thước phần tử.
++ Là 1 vùng bên ngoài chiếm cả phần margin.
++ Không áp dụng các giá trị thuộc tính cho nhiều chiều như border.  */
+.box1{
+    width: 200px;
+    height: 200px;
+    border: 10px solid red;
+    outline: 20px solid blue; 
+    /* outline-offset: khoảng cách từ outline tới border,padding hoặc content.  */
+    outline-offset: 10px; 
+    margin: 30px;
+    
+}
+.box2{
+    width: 200px;
+    height: 200px;
+    border: 10px solid yellow;
+}
