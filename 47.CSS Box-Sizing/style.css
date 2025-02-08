@@ -1,0 +1,18 @@
+/* - box-sizing: quyết định cách tính chiều rộng (width) và chiều cao (height) của một phần tử trong CSS.
+- 2 giá trị của chính của box-sizing:
++ content-box (mặc định): Thuộc tính width và height chỉ bao gồm content. border và padding được thêm vào ngoài chiều rộng và chiều cao đã chỉ định.
++ border-box: Thuộc tính width và height bao gồm cả nội dung, khoảng đệm, và viền. */
+
+/*-> content-box : kích thước phần tử có thể thay đổi.
+-> border box: kích thước phần tử không bị thay đổi. 
+*/
+.box{
+    width: 100px;
+    height: 150px;
+    padding: 20px;
+    border: 10px solid red;
+    box-sizing: content-box;
+}
+.box2{
+    box-sizing: border-box;
+}
