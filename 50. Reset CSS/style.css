@@ -1,0 +1,14 @@
+/* Default CSS value: -Trình duyệt sẽ tự thêm vào các thuộc tính mặc định để hiển thị
+các thẻ HTML tuy nhiên các trình duyệt khác nhau có thể các thuộc tính được thêm vào sẽ khác nhau,
+-Các thẻ có CSS mặc định làm khó khăn trong việc kiểm soát kích thước và tính toán
+kích thước so với thiết kế.*/
+
+/* Cách reset CSS: tạo file reset.css, đặt lên trên cùng để tránh ghi đè khác file
+CSS khác do thứ tự ưu tiên về vị trí đặt. */
+h1{
+    margin: 50px;
+    padding: 10px;
+    border: 10px solid red;
+    outline: 10px solid blue;
+    outline-offset: 20px;
+}

@@ -1,0 +1,8 @@
+/* CSS Inheritance: các phần tử con nhận được các giá trị thuộc tính kế thừa từ phần tử cha.
+ * các thuộc tính kế thừa chủ yếu liên quan đến văn bản: font-size, font-style, color,.../
+body{
+    font-style: italic;
+    color: blue;
+    font-size: 30px;
+    border-top: 10px solid green;
+}
