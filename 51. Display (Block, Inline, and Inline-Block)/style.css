@@ -1,0 +1,21 @@
+/*- Các thẻ HTML đều có thuộc tính Display: block, inline , inline-block.
++ Block Element: các thẻ ở trạng thái mặc định luôn chiếm 100% chiều rộng của thẻ cha bất kể nội dung
+dài hay ngắn.
+
++ Inline Element: hộp có kích thước phụ thuộc vào nội dung bên trong nó.
+    + 1 số thuộc tính CSS không áp dụng được với inline element: padding-top, padding-bottom
+    margin-top, margin-bottom, width, height, min-width, min-height.
+    (inline-element sinh ra để nằm trên cùng 1 hàng , tránh phá vỡ cấu trúc dòng).
+
++ Inline-Block: sự kết hợp giữa inline và block, có thể áp dụng padding-top, padding-bottom
+margin-top, margin-bottom, width, height, min-width, min-height.
+*/
+
+
+strong{
+    display:inline-block;
+    padding:30px;
+    margin: 30px;
+    height: 200px;
+    width: 200px;
+}
