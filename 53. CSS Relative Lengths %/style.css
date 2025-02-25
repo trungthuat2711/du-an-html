@@ -1,0 +1,27 @@
+/* - Đơn vị % sẽ dựa vào kích thước của phần tử cha ví dụ: width, height,... 
+- Lưu ý: nếu thẻ cha không có kích thước thì sẽ lấy kích thước mặc định của trình duyệt,
+ví dụ font-size mặc định của trình duyệt thường = 16px.
+*/
+body{
+    background-color: blueviolet;
+    /* body có chiều cao bằng tổng chiều cao của các phần tử con. */
+    height: 400px;
+}
+.box{
+    background-color: blue;
+    /* độ rộng = 50% thẻ cha */
+    width: 50%; 
+    /* chiều cao = 50% thẻ cha */
+    height: 50%;
+}
+.box_child{
+    background-color: yellow;
+    width: 50%;
+}
+.parent{
+    font-size: 60px;
+}
+.line1{
+    /* kích thước phông chữ = 40% thẻ cha */
+    font-size: 40%;
+}
