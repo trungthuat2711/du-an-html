@@ -1,0 +1,14 @@
+/* Đơn vị tuyệt đối và đơn vị tương đối
++ khi dùng đơn vị tuyệt đối , khi người dùng thay đổi cài đặt trên trình duyệt , các kích thước
+vẫn giữ nguyên không đổi. */
+
+h2{
+    font-size: 30px;
+    width: 400px;
+    height: 80px;
+    background-color: yellow;
+}
+p{
+    width: 50%;
+    background-color: blue;
+}

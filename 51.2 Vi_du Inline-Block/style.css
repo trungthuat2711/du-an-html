@@ -1,0 +1,25 @@
+body{
+    background-color: aqua;
+}
+a{
+    text-decoration: none;
+    background-color: pink;
+    /* đảm bảo khi kích thước text dài ra không bị mất viền */
+    border-radius: 999px; 
+    color:black;
+    width: 100px;
+    display: inline-block;
+    padding: 8px 16px;
+    text-align: center;
+    margin-top: 30px;
+}
+a:hover{
+    color: green;
+    background-color: orange;
+}
+a:first-child{
+    margin-left:40%;
+}
+a:nth-child(2){
+    margin-right: auto;
+}
