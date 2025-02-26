@@ -1,0 +1,21 @@
+/*- Đơn vị tương đối em: dựa vào kích thước font-size của phần tử(vd: 2em = 2 x kích thước font-size).
++ TH1: thẻ cha và thẻ con không có font-size -> lấy kích thước từ font-size của root(html 16px).
++ TH2: thẻ cha có font-size tuyệt đối -> lấy kích thước font-size thẻ cha.
++ TH3: cả thẻ cha và con đều có font-size -> ưu tiên lấy kích thước font-size của chính nó.
++ TH4: thẻ cha có font-size tương đối -> thẻ cha lấy kích thước từ root(html 16px) ,
+thẻ con tiếp tục kế thừa từ thẻ cha.*/
+
+
+.parent{
+    /* Lấy kích thước mặc định trình duyệt = 16px */
+    font-size: 2em;   /* 2em = 2 x 16 = 32px */
+}
+.child{
+/* child đầu tiên kế thừa parent = 32px -> font-size = 2em = 64px, w = 128px, h = 128px */
+/* child thứ hai kế thừa child đầu tiên = 64px -> font-size = 2em = 128px, w = 256px, h = 256px */
+/* child cuối kế thừa child thứ hai = 128px -> font-size = 2em = 256px, w = 512px, h =512px */
+    font-size: 2em;
+    width: 2em;
+    height: 2em;
+    background-color: violet;
+}
