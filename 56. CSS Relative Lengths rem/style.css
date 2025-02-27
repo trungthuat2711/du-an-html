@@ -1,0 +1,25 @@
+/*- Đơn vị rem: kích thước phụ thuộc vào font-size của thẻ html(root element). */
+/*- Sử dụng rem trong trường hợp muốn thiết kế 1 khối cố định các kích thước, co giãn theo tỉ lệ. */
+/*- Tính toán để đổi pixel -> rem 
++ Thông thường 1 rem = 16px
++ Cần quy đổi tính tỉ lệ để 1 rem = 10px
++ (10 / 16) * 100 = 62.5% -> giảm font-size của thẻ html xuống 62.5% */
+/*- Khi dùng rem nếu thay đổi cài đặt trên trình duyệt kích thước các phần tử sẽ thay đổi theo. */
+
+/* Nếu muốn tăng kích thước các phần tử, ví dụ tăng 10% 
+-> Tính toán lại để tăng font-size cuả thẻ html lên 10% */
+html{
+    font-size: 62.5%;
+}
+h1{
+    /* 4.4rem = 4.4 x 10 = 44px */
+    font-size: 4.4rem;
+}
+p{
+    font-size: 2.53rem;
+}
+.box{
+    width: 22rem;
+    height: 18rem;
+    background-color: blue;
+}
